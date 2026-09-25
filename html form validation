@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+
+    <label>Full Name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" placeholder="enter your email" name="email " required>
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password"
+           minlength="8" required>
+    <br><br>
+
+    <label>Age:</label>
+    <input type="number" name="age"
+           min="18" max="60" required>
+    <br><br>
+
+    <label>Phone:</label>
+    <input type="tel" name="phone" required>
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+
+    
+
+
+</form> <br>
+<svg width="200" height="100">
+        <rect width="200" height="100"fill="blue"
+        </rect>
+    </svg>
+
+    <svg width="200" height="100">
+
+        <circle cx="100" cy="75" r="50"fill="blue"/>
+    </svg> <br><br>
+
+    <svg width="200" height="100">
+
+        <line x1="10" y2="10" x2="190" y2="90" stroke="black"stroke-width="3"/>
+    </svg>
+
+    <div>
+
+        <h1>ABDULAHI BAY SHALE</h1>
+    </div>
+
+
+</body>
+</html>

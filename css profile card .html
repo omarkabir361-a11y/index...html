@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Profile Card</title>
+
+    <style>
+
+        /* CSS VARIABLES */
+
+        :root {
+            --primary: #6c63ff;
+            --secondary: #8e44ad;
+            --dark: #222;
+            --light: #f4f4f4;
+        }
+
+        /* RESET */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* BODY */
+
+        body {
+            font-family: Arial, sans-serif;
+
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(
+                135deg,
+                #667eea,
+                #764ba2
+            );
+        }
+
+        /* PROFILE CARD */
+
+        .profile-card {
+            width: 350px;
+
+            background: white;
+
+            border-radius: 20px;
+
+            padding: 30px;
+
+            text-align: center;
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, 0.2);
+
+            transition: transform 0.4s ease;
+        }
+
+        /* CARD HOVER */
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* PROFILE IMAGE */
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 5px solid var(--primary);
+
+            margin-bottom: 15px;
+        }
+
+        /* NAME */
+
+        .profile-card h1 {
+            color: var(--dark);
+
+            font-size: 25px;
+
+            margin-bottom: 8px;
+        }
+
+        /* JOB TITLE */
+
+        .profile-card h3 {
+            color: var(--primary);
+
+            font-size: 16px;
+
+            margin-bottom: 15px;
+        }
+
+        /* BIO */
+
+        .bio {
+            color: #666;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+
+            margin-bottom: 20px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-bottom: 25px;
+        }
+
+        .skills span {
+            background: #eee;
+
+            color: var(--dark);
+
+            padding: 7px 12px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+            transition: background 0.3s;
+        }
+
+        .skills span:hover {
+            background: var(--primary);
+
+            color: white;
+        }
+
+        /* SOCIAL BUTTONS */
+
+        .social-links {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 10px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+
+            background: var(--primary);
+
+            color: white;
+
+            padding: 10px 15px;
+
+            border-radius: 8px;
+
+            font-size: 13px;
+
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--secondary);
+
+            transform: scale(1.05);
+        }
+
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 400px) {
+
+            .profile-card {
+                width: 90%;
+
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- PROFILE CARD -->
+
+    <div class="profile-card">
+
+        <!-- PROFILE IMAGE -->
+
+        <img
+            src="https://i.pravatar.cc/150?img=12"
+            alt="Profile picture"
+            class="profile-image"
+        >
+
+        <!-- NAME -->
+
+        <h1>Abdullahi Bay Shale</h1>
+
+        <!-- JOB -->
+
+        <h3>Frontend Developer</h3>
+
+        <!-- BIO -->
+
+        <p class="bio">
+            Passionate frontend developer learning
+            modern web technologies and creating
+            beautiful, responsive websites.
+        </p>
+
+        <!-- SKILLS -->
+
+        <div class="skills">
+
+            <span>HTML</span>
+
+            <span>CSS</span>
+
+            <span>JavaScript</span>
+
+            <span>GitHub</span>
+
+        </div>
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="social-links">
+
+            <a href="#">GitHub</a>
+
+            <a href="#">LinkedIn</a>
+
+            <a href="#">Contact</a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>html.links</title>
+
+   </head> 
+   <body>
+    <a href="back.html">go to you tube</a>
+
+    <a href="https://www.google.com">Go to Google</a>
+
+    <ul>
+        <h2>unordered list</h2>
+        <li>java</li>
+        <li>css </li>
+        <li>python</li>
+    </ul>
+
+    <ol>
+        <h2>ordered list</h2>
+      
+        <li>you tube</li>
+        <li>google</li>
+        <li>facebook</li>
+    </ol>
+
+    <dl>
+        <h1>description list</H1>
+
+            <dt>HTML</dt>
+            <dd>HTML is a markup language for creating web pages.</dd>
+
+            <dt>css</dt>
+            <dd>CSS is a style<mark> sheet language</mark> used for describing<br> the presentation of a document written
+    in a markup language like HTML.</dd>
+
+    <dl>javascript</dl>
+    <dd>JavaScript is a programming language that is commonly used to create interactive effects within
+
+    </dl>
+
+
+   </body>
+   </html>

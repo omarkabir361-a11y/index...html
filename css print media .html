@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Report</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #3498db;
+            color: white;
+            padding: 40px;
+            text-align: center;
+
+            clip-path: polygon(
+                0% 0%,
+                100% 0%,
+                100% 80%,
+                50% 100%,
+                0% 80%
+            );
+        }
+
+        /* REPORT */
+
+        .report {
+            background: white;
+            width: 80%;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .profile {
+            width: 120px;
+            height: 120px;
+            background: orange;
+            margin: auto;
+
+            clip-path: circle(50%);
+        }
+
+        /* BUTTON */
+
+        button {
+            background: green;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+
+        /* CUSTOM SCROLLBAR */
+
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #ddd;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #3498db;
+            border-radius: 10px;
+        }
+
+        /* PRINT MEDIA */
+
+        @media print {
+
+            @page {
+                size: A4;
+                margin: 20mm;
+            }
+
+            nav,
+            button {
+                display: none;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            .report {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background: white;
+                color: black;
+                clip-path: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Reports</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <header>
+
+        <h1>Student Report</h1>
+
+        <p>Software Development Course</p>
+
+    </header>
+
+    <section class="report">
+
+        <div class="profile"></div>
+
+        <h2>Student Information</h2>
+
+        <p><strong>Name:</strong> Abdullahi Bay Shale</p>
+
+        <p><strong>Course:</strong> Software Development</p>
+
+        <p><strong>Duration:</strong> 5 Months</p>
+
+        <p><strong>Subject:</strong> CSS</p>
+
+        <h2>Learning Progress</h2>
+
+        <p>
+            The student is learning CSS styling,
+            responsive design, and web development.
+        </p>
+
+        <button onclick="window.print()">
+            Print Report
+        </button>
+
+    </section>
+
+</body>
+
+</html>

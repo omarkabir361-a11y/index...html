@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>software enginering</title>
+    </head>
+    <body>
+        <h1><u>welcome to software engineering</u></h1>
+
+        <p>Software engineering is the systematic application of engineering approaches to the development of software.<br>
+             It is a discipline that combines principles from computer science, engineering,<br>
+              and project management to create high-quality software products.</p>
+
+              <images>
+
+                <img src="c:\Users\Lenovo\Downloads\christopher-gower-m_HRfLhgABo-unsplash.jpg" alt=software engineering" width="500" height="300"
+              </images>
+
+    </body>
+</html>

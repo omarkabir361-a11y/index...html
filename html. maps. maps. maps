@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Maps</title>
+    </head>
+    <body>
+        <h1>My Maps</h1>
+        <p>This is a simple map page.</p>
+
+        <img src="thisisengineering-64YrPKiguAE-unsplash.jpg" alt="Map Image" width="500" height="300" usemap="#myMap">
+
+        <map name="myMap">
+            <area shape="rect" coords="0,0,200,150" href="https://www.google.com" alt="Google">
+        </map>
+    </body>
+</html>

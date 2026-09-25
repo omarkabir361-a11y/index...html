@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Budget Tracker</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <style>
+    /* Basic Page Setup */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Part 1: Header Styling (Using ID Selector) */
+#main-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#main-header h1 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+/* Class Selector */
+.subtitle {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Shared Card Styling (Class Selector) */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Part 2: Add Expense Section (ID Selector) */
+#add-expense-section h2 {
+  color: #27ae60;
+  margin-top: 0;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+/* Element Selectors */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Part 3: Your Expenses Section (ID Selector) */
+#expenses-list-section h2 {
+  color: #2980b9;
+  margin-top: 0;
+}
+
+.placeholder-text {
+  font-style: italic;
+  color: #95a5a6;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Part 1: Page Header -->
+  <header id="main-header">
+    <h1>My Budget Tracker</h1>
+    <p class="subtitle">Track your income and expenses in one place.</p>
+  </header>
+
+  <main>
+    <!-- Part 2: Add Expense Section -->
+    <section id="add-expense-section" class="card">
+      <h2>Add Expense</h2>
+      <form>
+        <div class="input-group">
+          <label for="expense-name">Expense Name:</label>
+          <input type="text" id="expense-name" placeholder="e.g., Groceries">
+        </div>
+
+        <div class="input-group">
+          <label for="expense-amount">Amount ($):</label>
+          <input type="number" id="expense-amount" placeholder="e.g., 50">
+        </div>
+
+        <div class="input-group">
+          <label for="expense-category">Category:</label>
+          <input type="text" id="expense-category" placeholder="e.g., Food">
+        </div>
+
+        <button type="button" class="btn">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- Part 3: Expenses Placeholder Section -->
+    <section id="expenses-list-section" class="card">
+      <h2>Your Expenses</h2>
+      <p class="placeholder-text">No expenses yet</p>
+    </section>
+  </main>
+
+</body>
+</html>
